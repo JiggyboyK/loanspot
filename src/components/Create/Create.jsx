@@ -9,7 +9,6 @@ const Create = () => {
   const [title,setTitle ] = useState('')
   const [body,setBody ] = useState('')
   const form = {title,body, user: "test", id: Math.floor(Math.random() * 5000)}
-  // const form = {title,body, user_id: Math.floor(Math.random() * 5000), id: Math.floor(Math.random() * 5000)}
   const url ='https://gorest.co.in/public/v2/users/16/posts'
   const token = '0075442b0993bb34e2135fe5554d9ebc0017ff9a9131e94825f5afe3996e9cdd'
   

@@ -38,6 +38,7 @@ const Test = () => {
   useEffect(()=>{
     getData()
   },[])
+  
   return (
     <div className={styles.test}>
       {pending && <p>Loading</p>}

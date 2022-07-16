@@ -6,23 +6,17 @@ import styles from './Login.module.css'
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [user, setUser] = useState();
 
 
 
-    const handleSubmit = async (e) => {
-        // if there's a user show this message
-      
+    const handleSubmit = async (e) => {      
         e.preventDefault();
 
         const user = {username, password};
 
-        // const data = {
-        //     email: 'email',
-        //     passowrd: 'password'
-        // }
+     
 
-       const response = await axios.post('http://localhost:3000/login', user)
+       const res = await axios.post('http://localhost:3000/login', user)
      
         .then (res => {
             console.log (res)
