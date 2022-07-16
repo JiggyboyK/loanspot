@@ -52,6 +52,13 @@ function Login() {
 
         </div>
      </form>
+
+     <p>
+          Need an Account? <br />
+          <span className='line'>
+          <a href="/signup">Sign up</a>
+          </span>
+    </p>
      </div>
 
   )
